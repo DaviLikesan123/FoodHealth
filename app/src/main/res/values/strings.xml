@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Food&amp;Health</string>
     <string name="calcular">CALCULAR</string>
-    <string name="digite_peso">Digite o seu peso</string>
+    <string name="digite_peso">Digite o seu peso (KG)</string>
     <string name="digite_altura">Digite a sua altura</string>
-    <string name="insira_a_sua_altura">Insira sua altura</string>
-    <string name="insira_o_seu_peso">Insira seu peso</string>
+    <string name="insira_a_sua_altura">Insira sua altura (m)</string>
+    <string name="insira_o_seu_peso">Insira seu peso </string>
 </resources>
