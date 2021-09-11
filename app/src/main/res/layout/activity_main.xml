@@ -47,8 +47,7 @@
                 android:id="@+id/tieRegisterName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName" />
-
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -75,7 +74,6 @@
             android:layout_marginEnd="@dimen/margin_default"
             android:hint="@string/digite_peso"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tilRegisterName">
 
@@ -83,23 +81,20 @@
                 android:id="@+id/tieRegisterPeso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName" />
-
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <android.widget.Button
+            android:textAllCaps="true"
             android:id="@+id/btCalcular"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
             android:layout_marginTop="32dp"
             android:backgroundTint="@color/Red_Light"
-            android:text="@string/calcular"
+            android:text="Calcular"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tilRegisterPeso"
-            app:layout_constraintWidth_percent="1" />
-
-
+            app:layout_constraintTop_toBottomOf="@+id/tilRegisterPeso" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
