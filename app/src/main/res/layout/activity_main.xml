@@ -12,81 +12,51 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <include
+            android:id="@+id/inAppbar"
+            layout="@layout/appbar"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="268dp"></include>
 
         <TextView
-            android:id="@+id/textLogo"
-            android:layout_width="match_parent"
+            android:id="@+id/tvPeso"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="monospace"
+            android:layout_marginTop="50dp"
             android:gravity="center"
-            android:padding="30dp"
-            android:text="@string/digite_peso"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilPeso"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="16dp"
             android:hint="@string/insira_o_seu_peso"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textLogo" >
+            app:layout_constraintTop_toTopOf="parent"
+            >
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tiePeso"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:inputType="numberDecimal" />
-        </com.google.android.material.textfield.TextInputLayout>
+        </TextView>
 
-
-        <TextView
-            android:id="@+id/tvAltura"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="140dp"
-            android:fontFamily="monospace"
-            android:gravity="center"
-            android:padding="30dp"
-            android:text="@string/digite_altura"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-
-
-
-
-            app:layout_constraintTop_toBottomOf="@id/tilPeso"
-             />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilAltura"
+            android:id="@+id/tilRegisterName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:hint="@string/insira_a_sua_altura"
-            app:layout_constraintEnd_toEndOf="@+id/tvAltura"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@id/tvAltura"
-            app:layout_constraintTop_toBottomOf="@+id/tvAltura">
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_top_register_screen"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:hint="@string/digite_peso"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPeso">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tieAltura"
+                android:id="@+id/tieRegisterName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:inputType="numberDecimal" />
+                android:inputType="textPersonName" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
 
         <Button
             android:id="@+id/btCalcular"
@@ -98,9 +68,7 @@
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tilAltura"
             app:layout_constraintVertical_bias="0.14"
             app:layout_constraintWidth_percent="1" />
 
