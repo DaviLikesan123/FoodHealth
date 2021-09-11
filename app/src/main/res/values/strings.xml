@@ -5,4 +5,6 @@
     <string name="digite_altura">Digite a sua altura</string>
     <string name="insira_a_sua_altura">Insira a sua altura</string>
     <string name="insira_o_seu_peso">Insira o seu peso</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
