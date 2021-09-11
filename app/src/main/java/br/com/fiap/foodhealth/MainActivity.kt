@@ -19,11 +19,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(ImcFragment)
 
-        binding.bottomNavigation.setOnNavigationItemReselectedListener {
+        binding.bottomNavigation.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.ic_bmi -> replaceFragment(ImcFragment)
                 R.id.ic_list -> replaceFragment(ListFragment)
+
             }
+            true
         }
     }
 
