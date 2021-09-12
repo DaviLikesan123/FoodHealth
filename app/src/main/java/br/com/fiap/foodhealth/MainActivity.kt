@@ -1,5 +1,6 @@
 package br.com.fiap.foodhealth
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -23,10 +24,11 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.ic_bmi -> replaceFragment(ImcFragment)
                 R.id.ic_list -> replaceFragment(ListFragment)
-
             }
             true
         }
+
+
     }
 
     private fun replaceFragment(fragment: Fragment) {
