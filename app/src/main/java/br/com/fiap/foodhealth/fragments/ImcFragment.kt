@@ -33,13 +33,8 @@ class ImcFragment : Fragment() {
             val altura = binding.tieRegisterAltura.editableText.toString().toFloat() / 100
             val resultado = (peso/ (altura * altura)) /10000
             binding.tvResult.text = "$resultado"
-
-
-
         }
     }
-
-
 }
 
 
