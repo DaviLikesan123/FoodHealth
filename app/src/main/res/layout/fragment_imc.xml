@@ -30,7 +30,7 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilRegisterName"
+            android:id="@+id/tilRegisterPeso"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvPeso">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tieRegisterName"
+                android:id="@+id/tieRegisterPeso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal" />
@@ -57,13 +57,13 @@
             android:hint="Digite a sua altura (m)"
             android:textColorHint="#808080"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/tilRegisterPeso"
+            app:layout_constraintBottom_toTopOf="@+id/tilRegisterAltura"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilRegisterPeso"
+            android:id="@+id/tilRegisterAltura"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -73,10 +73,10 @@
             android:hint="@string/digite_peso"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tilRegisterName">
+            app:layout_constraintTop_toBottomOf="@+id/tilRegisterPeso">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tieRegisterPeso"
+                android:id="@+id/tieRegisterAltura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal" />
@@ -93,7 +93,7 @@
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tilRegisterPeso" />
+            app:layout_constraintTop_toBottomOf="@+id/tilRegisterAltura" />
 
         <TextView
             android:id="@+id/tvResult"
