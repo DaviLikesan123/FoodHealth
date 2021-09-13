@@ -6,14 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".fragments.ListFragment">
 
-    <TextView
-        android:id="@+id/list"
-        android:layout_width="wrap_content"
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPesquisa"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:hint="@string/hint"
+        android:paddingTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilRegisterPeso">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiePesquisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <android.widget.Button
+        android:id="@+id/btPesquisar"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_button"
+        android:text="PESQUISAR"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tilPesquisa" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="513dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/btPesquisar"
+        tools:layout_editor_absoluteX="1dp">
+
+        <ImageView
+            android:id="@+id/ivFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
