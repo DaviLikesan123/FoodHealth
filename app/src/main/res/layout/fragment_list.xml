@@ -16,7 +16,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="@dimen/margin_default"
         android:hint="@string/hint"
-        android:paddingTop="30dp"
+        android:paddingTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +26,7 @@
             android:id="@+id/tiePesquisa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal" />
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <android.widget.Button
