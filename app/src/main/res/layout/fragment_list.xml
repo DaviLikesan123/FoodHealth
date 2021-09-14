@@ -7,30 +7,29 @@
     tools:context=".fragments.ListFragment">
 
 
-
-
-
     <ImageView
         android:id="@+id/ivFood"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/sucoabobora"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/sucoabobora" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Suco de Abobora "
+        android:text="Suco de Abóbora "
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="18sp"
+        android:textSize="28sp"
         android:textStyle="bold"
-
+        app:layout_constraintBottom_toTopOf="@+id/ivFood"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivFood" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvDesc"
@@ -38,12 +37,9 @@
         android:layout_height="wrap_content"
         android:text="@string/descric_pumpkin"
         android:textAlignment="center"
-
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvName" />
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/ivFood" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
